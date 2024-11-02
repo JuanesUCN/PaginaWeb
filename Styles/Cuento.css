@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../Imagenes/Cuento/Fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+div{
+    background-color: white;
+    width: 50%;
+}
+td{
+    font-style: bold;
+}
