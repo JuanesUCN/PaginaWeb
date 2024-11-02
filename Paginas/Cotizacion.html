@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ColSports - Contactenos</title>
+    <link rel="icon" href="../Imagenes/Logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../Styles/style_IndexPage.css" />
+  </head>
+  <body>
+    <header>
+        <div class="banner">
+            <img class="banner-img" src="../Imagenes/Logo.jpeg" alt="Logo Tienda" id="logo"/>
+            <h1>Solicitud de cotización - ColSports</h1>
+
+            <nav class="menu">
+            <div class="menu-item">
+                <a href="../index.html">Inicio</a>
+            </div>
+            <div class="menu-item">
+                <a href="#">Productos</a>
+                    <div class="dropdown">
+                        <a href="../Paginas/Productos/futbol.html">Futbol</a>
+                        <a href="Productos/baloncesto.html">Baloncesto</a>
+                        <a href="#">Voleibol</a>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <a href="Contactenos.html">Contactenos</a>
+            </div>
+            <div class="menu-item">
+                <a href="Cotizacion.html">Solicitud de Cotización</a>
+            </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+
+    <div class="div-principal-ctz">
+        
+        <section id="cotizacion">
+            <h1>Escribe tus datos de contacto.</h1>
+            <form>
+                <label for="nombre">Nombre:</label><br><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="nombre">Número de celular:</label><br><br>
+                <input type="number" id="celular" name="celular" required><br><br>
+
+            <label for="producto">Producto de interés:</label><br><br>
+            <select id="producto" name="producto" required>
+                <option value="futbol">Fútbol</option><br><br>
+                <option value="baloncesto">Baloncesto</option><br><br>
+                <option value="voleibol">Voleibol</option><br><br>
+            </select>
+
+            <br><br><label for="comentarios">Comentarios:</label><br><br>
+            <textarea id="comentarios" name="comentarios" rows="10" placeholder="Escriba sus comentarios aquí..."></textarea>
+            </form>
+
+            <div>
+                <input type="checkbox" id="opcion1" name="opcion1">
+                <label for="opcion1">Quiero recibir ofertas especiales</label><br><br>
+            </div>
+
+        </section>
+               
+            <button type="button" onclick="finalizarCotizacion()">Finalizar</button>
+        
+
+    </div>
+
+    <script>
+        function finalizarCotizacion() {
+            alert("¡Gracias! Se ha enviado un correo electrónico con toda la información. En breves momentos uno de nuestros asesores se comunicará usted.");
+
+            document.getElementById('nombre').value = "";
+            document.getElementById('email').value = "";
+            document.getElementById('celular').value = "";
+            document.getElementById('cotizacion').value = "";
+        }
+    </script>
+
+  </body>
+</html>
